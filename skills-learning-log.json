@@ -204,5 +204,19 @@
       "preview": "prompt-lookup.md\n147.2k\n1\n2\n3\n4\nexport prompt-lookup\nfrom \"f/prompts.chat\"\nActivates when the user a"
     },
     "details": "Skip to main content\nready\n~/\nskillsmp\n$\nai\n--search\n$\ncd\n/categories\n$\nwatch\nstats\n$\nman\ndocs\n$\napi\n--docs\nEN"
+  },
+  {
+    "timestamp": "2026-02-25T11:00:02.815Z",
+    "hour": 19,
+    "category": "✍️ 内容创作",
+    "searchQuery": "content",
+    "skillLearned": {
+      "name": "content-design",
+      "stars": "176.1k",
+      "link": "https://skillsmp.com/skills/n8n-io-n8n-claude-skills-content-design-skill-md",
+      "path": "n8n-io-n8n-claude-skills-content-design-skill-md",
+      "preview": "content-design.md\n176.1k\n1\n2\n3\n4\nexport content-design\nfrom \"n8n-io/n8n\"\nProduct content designer fo"
+    },
+    "details": "// Product content designer for UI copy. Use when writing, reviewing, or auditing user-facing text: button labels, error messages, tooltips, empty states, modal copy, placeholder text, confirmation dialogs, onboarding flows, or i18n strings. Also use when the user says /copy, /content, or /ux-copy."
   }
 ]
