@@ -36,6 +36,14 @@ cd ~/.openclaw/workspace && python3 scripts/ai-intelligence-monitor.py
 ```
 **说明**: 泛AI情报监控（B站科技区热门AI内容）
 
+### fetch_x_ai_trending
+**触发**: 每天 06:00, 12:00, 18:00, 00:00 (每天4次)
+**操作**:
+```bash
+cd ~/.openclaw/workspace && python3 scripts/x-ai-trending-fetch.py
+```
+**说明**: 抓取X(Twitter)泛AI类热门推文，按点赞数排序，每日最新
+
 ### generate_daily_report
 **触发**: 每天 09:30
 **操作**:
@@ -56,25 +64,32 @@ cd ~/.openclaw/workspace && git add . && git commit -m "auto: $(date +%Y-%m-%d-%
 
 | 时间 | 任务 | 产出 |
 |------|------|------|
+| 06:00 | X(Twitter)AI热门 | 国际AI热点 |
 | 09:00 | B站账号数据获取 | 个人账号报告 |
 | 09:00 | 泛AI情报监控 | 科技区热门 |
 | 09:30 | 生成统一汇报 | 完整日报 |
 | 09:35 | 同步到飞书 | Wiki更新 |
-| 09:40 | 发送汇报摘要 | 消息通知 |
+| 10:00 | B站科技区爬取 | 国内AI视频 |
+| 12:00 | X(Twitter)AI热门 | 国际AI热点 |
+| 18:00 | X(Twitter)AI热门 | 国际AI热点 |
+| 22:00 | B站科技区爬取 | 国内AI视频 |
+| 00:00 | X(Twitter)AI热门 | 国际AI热点 |
 
 ## 汇报内容模块
 
 - **B站账号数据**: 粉丝数、播放量、视频表现（Cookie登录获取）
-- **泛AI情报**: AI热门视频Top 10（B站科技区监控）
+- **B站科技区**: AI热门视频Top 10（国内热点）
+- **X(Twitter)AI**: 热门推文Top 10（国际热点）
 - **技能学习**: 今日学习的新技能（每小时学习记录）
-- **系统状态**: 6个任务运行状态（定时任务监控）
-- **选题建议**: 基于热点的选题推荐（数据分析）
+- **系统状态**: 定时任务运行状态监控
+- **选题建议**: 基于双源数据的选题推荐
 
 ## 存储位置
 
 - **飞书主汇报页**: https://acnh7t5exjqh.feishu.cn/wiki/FcvTwZTTyiCZ30kNLRVchfiwnKd
 - **本地主备份**: `data/daily-reports/daily_report_YYYYMMDD.md`
 - **快捷查看最新**: `data/daily-reports/daily_report_latest.md`
+- **X数据存储**: `data/x-ai-trending/x_trending_YYYYMMDD_HH.json`
 
 ## 常规Heartbeat检查
 

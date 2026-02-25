@@ -246,5 +246,19 @@
       "preview": "nano-banana-pro.md\n222.6k\n1\n2\n3\n4\nexport nano-banana-pro\nfrom \"openclaw/openclaw\"\nGenerate or edit i"
     },
     "details": "// Generate or edit images via Gemini 3 Pro Image (Nano Banana Pro)."
+  },
+  {
+    "timestamp": "2026-02-25T12:06:13.164Z",
+    "hour": 20,
+    "category": "🎬 视频/图片",
+    "searchQuery": "camera",
+    "skillLearned": {
+      "name": "camsnap",
+      "stars": "222.6k",
+      "link": "https://skillsmp.com/skills/openclaw-openclaw-skills-camsnap-skill-md",
+      "path": "openclaw-openclaw-skills-camsnap-skill-md",
+      "preview": "camsnap.md\n222.6k\n1\n2\n3\n4\nexport camsnap\nfrom \"openclaw/openclaw\"\nCapture frames or clips from RTSP/"
+    },
+    "details": "// Capture frames or clips from RTSP/ONVIF cameras."
   }
 ]

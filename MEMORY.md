@@ -43,7 +43,7 @@
 
 ## 技能学习历史
 
-### 已掌握技能 (27个+)
+### 已掌握技能 (30个+)
 **编程开发:**
 - python (v1.0.0) - Python最佳实践
 - python-patterns - 设计模式与惯用写法
@@ -62,6 +62,9 @@
 - writer - AI写作陷阱修复
 - chinese-writing - 中文写作风格学习
 - summarize - 内容摘要
+- content-creator - 内容创作
+- content-design - 内容设计
+- write-docs - 文档撰写
 
 **自动化:**
 - github - GitHub操作
@@ -85,6 +88,8 @@
 - video-frames - 视频帧提取
 - camsnap - 摄像头捕获
 - songsee - 音频可视化
+- nano-banana-pro - 视频处理
+- prompt-lookup - 提示词查找
 
 **系统运维:**
 - healthcheck - 系统安全检查
@@ -102,6 +107,12 @@
 - **标准**: 评分最高 + 对自媒体有帮助
 - **深度**: 安装依赖 + 阅读SKILL.md + 理解用法
 
+### 推荐学习方向 (视频管家需求)
+- "prompt" - 提示词工程 (奇数小时优先匹配)
+- "story" / "narrative" - 叙事结构
+- "film" / "cinema" - 电影镜头语言
+- "video editing" / "continuity" - 剪辑连贯性
+
 ### 设计模式收获
 1. **TDD可视化** - RED-GREEN-REFACTOR循环
 2. **分层工作流** - Inspect → Search → Lookup → Create → Validate
@@ -111,19 +122,51 @@
 
 ---
 
+## 管家体系架构 [2026-02-25]
+
+### 组织架构
+**大管家**: WF助手 (总指挥)  
+**五个小管家**:
+- 🎓 学习管家 - SkillsMP技能学习
+- 📊 数据管家 - B站数据爬取分析  
+- ✍️ 内容管家 - 自媒体内容策略
+- 🎬 视频管家 - 短剧分镜 + **审查员系统**
+- ⚙️ 系统管家 - 定时任务 + 备份同步
+
+### 视频管家 - 审查员系统
+- **强制审查**: 所有生成分镜必须经过逻辑校对
+- **7维度检查**: 动作/场景/时间/服装/位置/道具/情绪
+- **评分等级**: 优秀(90+)/良好(70+)/及格(50+)/不及格(<50)
+- **学习进化**: 自动收集错误案例，每周迭代规则
+- **学习资产**: `video-learning/` 目录 (errors/patterns/rules/insights)
+
+### 使用方式
+- 单管家: `[管家名] [指令]`  如: `视频管家 分镜 [内容]`
+- 总控: `大管家 [指令]`      如: `大管家 汇报`
+
+---
+
 ## 系统配置
 
-### 定时任务 (8个)
+### 定时任务 (7个)
 | 任务 | 频率 | 状态 |
 |------|------|------|
 | skillsmp-learner | 每小时 | 运行中 |
-| auto-skill-installer | 每小时 | 运行中 |
 | bilibili-tech-fetch | 每天10:00/22:00 | 运行中 |
-| bilibili-short-drama-fetch | 每天11:00/23:00 | 运行中 |
-| short-drama-daily-report | 每天21:00 | 运行中 |
-| system-ops-daily-report-merged | 每天09:00 | 运行中 |
+| bilibili-account-fetch | 每天09:00 | 运行中 |
+| x-ai-trending-fetch | 每天4次 | 待实现 |
+| ai-intelligence-monitor | 每天09:00 | 运行中 |
+| daily-report-gen | 每天09:30 | 运行中 |
 | auto-git-backup | 每30分钟 | 运行中 |
-| daily-chat-backup | 每天02:00 | 运行中 |
+
+### 管家配置文件
+| 管家 | 配置文件 |
+|------|----------|
+| 学习管家 | `managers/manager-skills.md` |
+| 数据管家 | `managers/manager-data.md` |
+| 内容管家 | `managers/manager-content.md` |
+| 视频管家 | `managers/manager-video.md` |
+| 系统管家 | `managers/manager-system.md` |
 
 ### 默认模型
 - **主模型**: moonshot/kimi-k2.5 (OpenClaw)
@@ -134,13 +177,21 @@
 ## 待办事项
 
 ### 高优先级
-- [ ] 确认B站短剧区正确的分区ID (rid≠217)
+- [ ] X(Twitter) Nitter爬取配置 (requests/beautifulsoup4)
 - [ ] 等待Kimi API速率限制恢复
 - [ ] VirusTotal标记问题 - 影响高评分技能安装
 
 ### 进行中
 - [x] 每小时技能学习系统部署
+- [x] 管家体系架构部署 [2026-02-25]
+- [x] B站短剧区 → X(Twitter)AI监控 [2026-02-25]
+- [ ] X API接入配置（待实现）
 - [ ] 飞书消息读取配置（回调地址模式）
+
+### 视频管家待办
+- [ ] 实际测试分镜生成+审查流程
+- [ ] 收集第一批错误案例
+- [ ] 首次规则迭代 (周日20:00)
 
 ---
 
@@ -163,5 +214,5 @@
 
 ---
 
-_记忆更新时间: 2026-02-24_  
-_来源: 历史对话记录 + Kimi交互记忆库整合_
+_记忆更新时间: 2026-02-25_  
+_来源: 历史对话记录 + 管家体系部署_
