@@ -555,3 +555,21 @@
 [2026-02-26 16:00:02] 技能学习完成
 ---
 [2026-02-26 17:00:01] 开始技能学习...
+
+[2026/2/26 17:00:01] 📚 开始技能学习...
+  → 已学习技能: 46 个
+  → 尝试访问: https://skillsmp.com/skills
+    访问失败: net::ERR_CONNECTION_CLOSED at https://skillsmp.com/skills
+  → 尝试访问: https://skillsmp.com/zh
+    访问失败: net::ERR_CONNECTION_CLOSED at https://skillsmp.com/zh
+  → 尝试访问: https://skillsmp.com
+    访问失败: net::ERR_CONNECTION_CLOSED at https://skillsmp.com
+  → 尝试访问: https://skillsmp.com/?page=1
+    访问失败: net::ERR_CONNECTION_CLOSED at https://skillsmp.com/?page=1
+  → 尝试访问: https://skillsmp.com/skills?page=1
+    访问失败: net::ERR_CONNECTION_CLOSED at https://skillsmp.com/skills?page=1
+  → 去重后共 0 个技能
+  → 未学习的新技能: 0 个
+  ⚠️ 没有新技能可学习
+[2026-02-26 17:00:02] 技能学习完成
+---
