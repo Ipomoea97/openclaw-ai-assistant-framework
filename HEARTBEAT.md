@@ -10,12 +10,10 @@
 当收到以下系统事件时，执行对应操作：
 
 ### run_skill_learning
-**触发**: 每小时整点
-**操作**: 
-```bash
-cd ~/.openclaw/workspace && node learn-skill.js >> learn-cron.log 2>&1
-```
-**说明**: 从SkillsMP搜索并学习一个新技能
+**触发**: 每小时整点  
+**执行方式**: 系统 crontab（静默，不通知）  
+**脚本**: `scripts/run-skill-learning.sh` → `learn-skill-v2.js` (修复版)  
+**说明**: 从SkillsMP搜索并学习新技能（修复版，每次可学5个）
 
 ### fetch_bilibili_account
 **触发**: 每天 09:00
@@ -84,7 +82,7 @@ cd ~/.openclaw/workspace && python3 scripts/generate-daily-report.py
 
 ## 脚本修复记录
 
-### 2026-02-26 修复
+### 2026-02-26 修复 (续)
 
 | 脚本 | 问题 | 修复内容 |
 |------|------|----------|
@@ -92,6 +90,7 @@ cd ~/.openclaw/workspace && python3 scripts/generate-daily-report.py
 | `bilibili-account-fetch.py` | 无错误处理，Cookie过期时崩溃 | 添加完善错误处理和日志记录 |
 | `ai-intelligence-monitor.py` | 无日志记录，412错误未处理 | 添加日志系统和反爬错误处理 |
 | `generate-daily-report.py` | 无日志记录，变量未定义 | 添加日志系统和异常处理 |
+| `learn-skill-v2.js` | 原脚本只能找到0-5个技能 | 全新修复版，使用正确URL，每次可学习5个技能 |
 
 ### 日志位置
 所有脚本日志统一存放：`~/.openclaw/workspace/logs/`
