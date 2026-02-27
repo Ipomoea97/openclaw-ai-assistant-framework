@@ -49,7 +49,7 @@
 | 2026-02-27 16:00 | skill-vetter | `clawhub install skill-vetter` | ✅ 已安装 |
 | 2026-02-27 16:00 | proactive-agent | `clawhub install proactive-agent` | ✅ 已安装 |
 | 2026-02-27 16:00 | automation-workflows | `clawhub install automation-workflows` | ✅ 已安装 |
-| 待安排 | bird | `clawhub install bird` | ⏳ 待安装 |
+| 2026-02-27 17:00 | bird / bird-twitter | `npx clawhub install bird-twitter` | ✅ 已安装 |
 | 待安排 | 香蕉的自媒体Skill系统 | - | ⏳ 待安装 |
 | 待安排 | baoyu-skills | - | ⏳ 待安装 |
 | 待安排 | planning-with-files | - | ⏳ 待安装 |
@@ -69,24 +69,33 @@
 
 ---
 
-## 📊 安装状态总结 (2026-02-27 16:00更新)
+## 📊 安装状态总结 (2026-02-27 17:00更新)
 
-### ✅ 已安装 (12个)
-tavily-search, skill-creator, notion, obsidian, brave-search, agent-browser, find-skills, self-improving-agent, skill-vetter, proactive-agent, automation-workflows, github
+### ✅ 已安装 (13个)
+tavily-search, skill-creator, notion, obsidian, brave-search, agent-browser, find-skills, self-improving-agent, skill-vetter, proactive-agent, automation-workflows, github, **bird-twitter**
 
-### ⏳ 待搜索/安装 (6个)
-- bird - 需通过 clawhub 搜索安装
-- 香蕉的自媒体Skill系统 - 可能对应 nano-banana-pro，需确认
-- baoyu-skills - 需通过 GitHub/clawhub 搜索
-- planning-with-files - 需通过 GitHub/clawhub 搜索
-- Rube MCP Connector - 需通过 GitHub/clawhub 搜索
-- remotion-best-practices - 需通过 GitHub/clawhub 搜索
+### ⏳ 未找到/需确认 (5个)
+| 技能 | 状态 | 说明 |
+|------|------|------|
+| 香蕉的自媒体Skill系统 | ❓ | 未在clawhub找到，可能是GitHub第三方技能 |
+| baoyu-skills | ❓ | 未在clawhub找到，可能是GitHub第三方技能 |
+| planning-with-files | ❓ | 未在clawhub找到，需确认来源 |
+| Rube MCP Connector | ❓ | 未在clawhub找到，需确认来源 |
+| remotion-best-practices | ❓ | 未在clawhub找到，需确认来源 |
 
 ### 📝 说明
-- 12个技能已在工作区中，状态正常
-- 剩余6个需通过 `npx clawhub` 或 GitHub 安装
-- 这些可能是第三方技能，需要单独搜索确认安装方式
+- **13个技能已就绪** (12原计划的 + 1个bird-twitter)
+- **5个技能** 在 clawhub 官方仓库中未找到
+- 这些可能是：
+  - GitHub第三方技能 (需用 `github:用户/仓库` 格式安装)
+  - 尚未发布的技能
+  - Skill名称可能有变化
+
+### 🔍 建议
+如需安装剩余技能，请提供：
+1. GitHub仓库地址 (如 `github:username/repo`)
+2. 或确认这些技能的确切名称
 
 ---
 
-_更新时间: 2026-02-27 16:00_
+_更新时间: 2026-02-27 17:00_

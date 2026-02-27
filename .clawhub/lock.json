@@ -96,6 +96,10 @@
     "mcp-skill": {
       "version": "1.0.0",
       "installedAt": 1772181504084
+    },
+    "x-twitter": {
+      "version": "2.3.1",
+      "installedAt": 1772184334590
     }
   }
 }
