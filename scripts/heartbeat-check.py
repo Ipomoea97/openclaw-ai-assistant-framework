@@ -254,30 +254,30 @@ class HeartbeatEngine:
         return self.alerts
 
 def send_feishu_notification(alerts):
-    """发送飞书通知"""
+    """发送飞书通知 - 生成通知文件供主会话发送"""
     if not alerts:
+        print("📤 无警报，不发送通知")
         return
 
     try:
-        import subprocess
-        import json
-
         # 构建消息
         message = "💓 Heartbeat 报告\n\n"
         message += "⚠️ 需要注意:\n"
         for alert in alerts:
             message += f"  {alert}\n"
 
-        # 使用openclaw发送消息
-        subprocess.run([
-            'openclaw', 'message', 'send',
-            '--to', 'ou_f17427a7518faa014659589d89db4d8b',
-            '--message', message
-        ], capture_output=True, timeout=30)
+        # 生成通知文件，主会话会读取并发送
+        notification_file = f'{DATA_DIR}/heartbeat-notification.txt'
+        os.makedirs(DATA_DIR, exist_ok=True)
 
-        print("📤 已发送飞书通知")
+        with open(notification_file, 'w', encoding='utf-8') as f:
+            f.write(message)
+
+        print(f"📤 已生成飞书通知文件: {notification_file}")
+        print(f"  内容: {message[:100]}...")
+        print("  主会话将自动发送通知")
     except Exception as e:
-        print(f"⚠️ 发送通知失败: {e}")
+        print(f"⚠️ 生成通知文件失败: {e}")
 
 def main():
     """Main function"""

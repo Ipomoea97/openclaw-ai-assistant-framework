@@ -1,5 +1,21 @@
 # HEARTBEAT.md
 
-# Keep this file empty (or with only comments) to skip heartbeat API calls.
+# 心跳检查任务
 
-# Add tasks below when you want the agent to check something periodically.
+## 每30分钟检查
+
+1. **检查Heartbeat通知文件**
+   - 文件路径：`data/heartbeat-notification.txt`
+   - 如果存在，读取内容并发送飞书通知给老板
+   - 发送后删除文件
+
+2. **检查技能学习进度**
+   - 日志文件：`learn-cron.log`
+   - 如果有新的学习成功记录，汇报给老板
+
+3. **检查定时任务状态**
+   - 查看是否有任务失败
+   - 如有异常，立即通知老板
+
+---
+_最后更新：2026-02-28 01:10_
