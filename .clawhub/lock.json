@@ -4,6 +4,14 @@
     "docker": {
       "version": "1.0.3",
       "installedAt": 1772211159876
+    },
+    "k8s": {
+      "version": "1.0.0",
+      "installedAt": 1772215528578
+    },
+    "terraform": {
+      "version": "1.0.0",
+      "installedAt": 1772215573591
     }
   }
 }

@@ -1,115 +1,125 @@
 {
-  "current_index": 22,
+  "current_index": 27,
   "installed": [
     {
       "name": "tavily-search",
       "time": "2026-02-28T00:03:37.659941",
-      "note": "\u5df2\u5b58\u5728"
+      "note": "已存在"
     },
     {
       "name": "skill-creator",
       "time": "2026-02-28T00:03:37.660004",
-      "note": "\u5df2\u5b58\u5728"
+      "note": "已存在"
     },
     {
       "name": "proactive-agent",
       "time": "2026-02-28T00:03:37.660038",
-      "note": "\u5df2\u5b58\u5728"
+      "note": "已存在"
     },
     {
       "name": "automation-workflows",
       "time": "2026-02-28T00:03:37.660068",
-      "note": "\u5df2\u5b58\u5728"
+      "note": "已存在"
     },
     {
       "name": "notion",
       "time": "2026-02-28T00:03:37.660100",
-      "note": "\u5df2\u5b58\u5728"
+      "note": "已存在"
     },
     {
       "name": "obsidian",
       "time": "2026-02-28T00:03:37.660128",
-      "note": "\u5df2\u5b58\u5728"
+      "note": "已存在"
     },
     {
       "name": "brave-search",
       "time": "2026-02-28T00:03:37.660154",
-      "note": "\u5df2\u5b58\u5728"
+      "note": "已存在"
     },
     {
       "name": "agent-browser",
       "time": "2026-02-28T00:03:37.660180",
-      "note": "\u5df2\u5b58\u5728"
+      "note": "已存在"
     },
     {
       "name": "find-skills",
       "time": "2026-02-28T00:03:37.660207",
-      "note": "\u5df2\u5b58\u5728"
+      "note": "已存在"
     },
     {
       "name": "self-improving-agent",
       "time": "2026-02-28T00:03:37.660235",
-      "note": "\u5df2\u5b58\u5728"
+      "note": "已存在"
     },
     {
       "name": "skill-vetter",
       "time": "2026-02-28T00:03:37.660261",
-      "note": "\u5df2\u5b58\u5728"
+      "note": "已存在"
     },
     {
       "name": "planning-with-files",
       "time": "2026-02-28T00:03:37.660287",
-      "note": "\u5df2\u5b58\u5728"
+      "note": "已存在"
     },
     {
       "name": "bird-twitter",
       "time": "2026-02-28T00:03:37.660312",
-      "note": "\u5df2\u5b58\u5728"
+      "note": "已存在"
     },
     {
       "name": "x-twitter",
       "time": "2026-02-28T00:03:37.660338",
-      "note": "\u5df2\u5b58\u5728"
+      "note": "已存在"
     },
     {
       "name": "gmail",
       "time": "2026-02-28T00:03:37.660364",
-      "note": "\u5df2\u5b58\u5728"
+      "note": "已存在"
     },
     {
       "name": "calendar",
       "time": "2026-02-28T00:03:37.660389",
-      "note": "\u5df2\u5b58\u5728"
+      "note": "已存在"
     },
     {
       "name": "spotify",
       "time": "2026-02-28T00:03:37.660414",
-      "note": "\u5df2\u5b58\u5728"
+      "note": "已存在"
     },
     {
       "name": "home-assistant",
       "time": "2026-02-28T00:03:37.660446",
-      "note": "\u5df2\u5b58\u5728"
+      "note": "已存在"
     },
     {
       "name": "gog",
       "time": "2026-02-28T00:03:37.660473",
-      "note": "\u5df2\u5b58\u5728"
+      "note": "已存在"
     },
     {
       "name": "github",
       "time": "2026-02-28T00:03:37.660499",
-      "note": "\u5df2\u5b58\u5728"
+      "note": "已存在"
     },
     {
       "name": "remotion",
       "time": "2026-02-28T00:03:37.660525",
-      "note": "\u5df2\u5b58\u5728"
+      "note": "已存在"
     },
     {
       "name": "mcp-skill",
       "time": "2026-02-28T00:03:37.660555",
-      "note": "\u5df2\u5b58\u5728"
+      "note": "已存在"
+    },
+    {
+      "name": "k8s",
+      "time": "2026-02-27T18:05:28.589Z",
+      "note": "新安装"
+    },
+    {
+      "name": "terraform",
+      "time": "2026-02-27T18:06:13.602Z",
+      "note": "新安装"
     }
   ],
   "failed": [],
