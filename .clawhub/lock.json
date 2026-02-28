@@ -52,6 +52,10 @@
     "ai-agent-helper": {
       "version": "1.0.0",
       "installedAt": 1772233393643
+    },
+    "hk-ai-stock-expert": {
+      "version": "1.0.0",
+      "installedAt": 1772236995524
     }
   }
 }

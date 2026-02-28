@@ -17,7 +17,10 @@
     "demo-video",
     "ai-notes-video",
     "ai-agent-helper",
-    "ai-boss-assistant"
+    "ai-boss-assistant",
+    "alicloud-ai-content-aimiaobi",
+    "ai-bill-clawhub",
+    "hk-ai-stock-expert"
   ],
   "keywordIndex": 3
 }
